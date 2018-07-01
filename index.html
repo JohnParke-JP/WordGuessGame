@@ -1,0 +1,106 @@
+<!-- MyFirstHTML.html -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HANGMAN BLUES!</title>
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Containger 1.  Holds the header info. -->
+  <div class="container">
+
+    <!-- Row 1 About Me  -->
+    <div class="row">
+
+      <!-- Row 1, Col 1 -->
+      <div class="col-12">
+        <img src="./assets/images/HangmanBlues_Blue.png" alt="HangmanBlues_Blue.png" class="logo">
+      </div>
+      <!-- END Row 1, Col 1 -->
+
+    </div>
+    <!-- END Row 1 -->
+
+    <!-- Row 2 horizontal rule  -->
+    <div class="row">
+
+      <!-- Row 2, Col 1 -->
+      <div class="col-11">
+        <hr>
+      </div>
+      <!-- END Row 2, Col 1 -->
+
+    </div>
+    <!-- END Row 2 -->
+
+  </div>
+  <!-- END Container 1 -->
+
+  <!-- Containger 2.  Holds the game.-->
+  <div class="container">
+
+    <!-- Row 1  -->
+    <div class="row">
+
+      <!-- Row 1, Col 1 thumnail and hint display area. -->
+      <div class="col-4 label-format" id="thumbDiv">
+        <img id="thumb" src="./assets/images/GenericBlues.jpg" alt="Musician">
+        <br>
+        <span id="hint">Welcome to Hangman Blues!</span>
+        <br><br>
+        <img id="muteBtn" src="./assets/images/unmute.png" alt="mute button">
+        <audio id="myAudio">
+          <source id="myAudioSource" src="./assets/sounds/click.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+      </div>
+      <!-- END Row 1, Col 1 -->
+
+      <!-- Row 1, Col 2 text display area. -->
+      <div class="col-7">
+
+        <div class="col-11 label-format" id="msg">
+          Press any key begin.
+        </div>
+
+        <div class="col-11 label-format" id="wins">
+          Wins: #
+        </div>
+
+        <div class="col-11 label-format" id="nameHeader">
+          Musician's Name.
+        </div>
+
+        <div class="col-11 label-format" id="name">
+          _ _ _ _ _ _
+        </div>
+
+
+        <div class="col-11 label-format" id="remaining">
+          Number of guesses remaining: #
+        </div>
+
+        <div class="col-11 label-format" id="guesses">
+          Letters already guessed: #
+        </div>
+
+      </div>
+      <!-- END Row 1, Col 2 -->
+
+    </div>
+    <!-- END Row 1 -->
+
+  </div>
+  <!-- END Container 2 -->
+
+  <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
